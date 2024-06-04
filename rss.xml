@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title></title>
+        <link>undefined</link>
+        <description>undefined</description>
+        <lastBuildDate>Tue, 04 Jun 2024 12:02:24 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[1. Welcome to Joplin!]]></title>
+            <guid>dee103514d7143c0bf67eab082c3ffb6</guid>
+            <pubDate>Mon, 08 Apr 2024 12:22:53 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="welcome-to-joplin">Welcome to Joplin!</h1>
+<p>Joplin is a free, open source note taking and to-do application, which helps you write and organise your notes, and synchronise them between your devices. The notes are searchable, can be copied, tagged and modified either from the application directly or from your own text editor. The notes are in <a title="https://joplinapp.org/help/apps/markdown" href="https://joplinapp.org/help/apps/markdown">Markdown format</a>. Joplin is available as a <strong>desktop</strong>, <strong>mobile</strong> and <strong>terminal</strong> application.</p>
+<p>The notes in this notebook give an overview of what Joplin can do and how to use it. In general, the three applications share roughly the same functionalities; any differences will be clearly indicated.</p>
+<p><img src="/_resources/1c789b027aaa4bed9334ac5f630e0756.png" /></p>
+<h2 id="joplin-is-divided-into-three-parts">Joplin is divided into three parts</h2>
+<p>Joplin has three main columns:</p>
+<ul>
+<li>
+<p><strong>Sidebar</strong> contains the list of your notebooks and tags, as well as the synchronisation status.</p>
+</li>
+<li>
+<p><strong>Note List</strong> contains the current list of notes - either the notes in the currently selected notebook, the notes in the currently selected tag, or search results.</p>
+</li>
+<li>
+<p><strong>Note Editor</strong> is the place where you write your notes. There is a <strong>Rich Text editor</strong> and a <strong>Markdown editor</strong> - click on the <strong>Toggle editor</strong> button in the top right hand corner to switch between both! You may also use an <a title="https://joplinapp.org/help/apps/external_text_editor" href="https://joplinapp.org/help/apps/external_text_editor">external editor</a> to edit notes. For example you can use Typora as an external editor and it will display the note as well as any embedded images.</p>
+</li>
+</ul>
+<h2 id="writing-notes-in-markdown">Writing notes in Markdown</h2>
+<p>Markdown is a lightweight markup language with plain text formatting syntax. Joplin supports a <a title="https://joplinapp.org/help/apps/markdown" href="https://joplinapp.org/help/apps/markdown">Github-flavoured Markdown syntax</a> with a few variations and additions.</p>
+<p>In general, while Markdown is a markup language, it is meant to be human readable, even without being rendered. This is a simple example (you can see how it looks in the viewer panel):</p>
+<hr />
+<h1 id="heading">Heading</h1>
+<h2 id="sub-heading">Sub-heading</h2>
+<p>Paragraphs are separated by a blank line. Text attributes <em>italic</em>, <strong>bold</strong> and <code>monospace</code> are supported. You can create bullet lists:</p>
+<ul>
+<li>apples</li>
+<li>oranges</li>
+<li>pears</li>
+</ul>
+<p>Or numbered lists:</p>
+<ol>
+<li>wash</li>
+<li>rinse</li>
+<li>repeat</li>
+</ol>
+<p>This is a <a title="https://joplinapp.org" href="https://joplinapp.org">link</a> and, finally, below is a horizontal rule:</p>
+<hr />
+<p>A lot more is possible including adding code samples, math formulae or checkbox lists - see the <a title="https://joplinapp.org/help/apps/markdown" href="https://joplinapp.org/help/apps/markdown">Markdown documentation</a> for more information.</p>
+<h2 id="organising-your-notes">Organising your notes</h2>
+<h3 id="with-notebooks">With notebooks</h3>
+<p>Joplin notes are organised into a tree of notebooks and sub-notebooks.</p>
+<ul>
+<li>On <strong>desktop</strong>, you can create a notebook by clicking on New Notebook, then you can drag and drop them into other notebooks to organise them as you wish.</li>
+<li>On <strong>mobile</strong>, press the "+" icon and select "New notebook".</li>
+<li>On <strong>terminal</strong>, press <code>:mn</code></li>
+</ul>
+<p><img src="/_resources/5ad8d7851b694d238d45e871d32cdac8.png" /></p>
+<h3 id="with-tags">With tags</h3>
+<p>The second way to organise your notes is using tags:</p>
+<ul>
+<li>On <strong>desktop</strong>, right-click on any note in the Note List, and select "Edit tags". You can then add the tags, separating them by commas.</li>
+<li>On <strong>mobile</strong>, open the note and press the "⋮" button and select "Tags".</li>
+<li>On <strong>terminal</strong>, type <code>:help tag</code> for the available commands.</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[2. Importing and exporting notes]]></title>
+            <guid>fb1fe5bcc77e49e1808ae0d4bf562321</guid>
+            <pubDate>Mon, 08 Apr 2024 12:22:53 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="importing-and-exporting-notes">Importing and exporting notes</h1>
+<h2 id="importing-from-evernote">Importing from Evernote</h2>
+<p>Joplin can import complete Evernote notebooks, as well as notes, tags, images, attached files and note metadata (such as author, geo-location, etc.) via ENEX files.</p>
+<p>To import Evernote data, first export your Evernote notebooks to ENEX files as described <a title="https://help.evernote.com/hc/en-us/articles/209005557-How-to-back-up-export-and-restore-import-notes-and-notebooks" href="https://help.evernote.com/hc/en-us/articles/209005557-How-to-back-up-export-and-restore-import-notes-and-notebooks">here</a>. Then, on <strong>desktop</strong>, do the following: Open File &gt; Import &gt; ENEX and select your file. The notes will be imported into a new separate notebook. If needed they can then be moved to a different notebook, or the notebook can be renamed, etc. Read <a title="https://joplinapp.org/help/apps/import_export#importing-from-evernote" href="https://joplinapp.org/help/apps/import_export#importing-from-evernote">more about Evernote import</a>.</p>
+<h1 id="importing-from-other-apps">Importing from other apps</h1>
+<p>Joplin can also import notes from <a title="https://joplinapp.org/help/apps/import_export#importing-from-other-applications" href="https://joplinapp.org/help/apps/import_export#importing-from-other-applications">many other apps</a> as well as <a title="https://joplinapp.org/help/apps/import_export#importing-from-markdown-files" href="https://joplinapp.org/help/apps/import_export#importing-from-markdown-files">from Markdown or text files</a>.</p>
+<h1 id="exporting-notes">Exporting notes</h1>
+<p>Joplin can export to the JEX format (Joplin Export file), which is an archive that can contain multiple notes, notebooks, etc. This is a format mostly designed for backup purposes. You may also export to other formats such as plain Markdown files, to JSON or to PDF. Find out <a title="https://joplinapp.org/help/apps/import_export#exporting" href="https://joplinapp.org/help/apps/import_export#exporting">more about exporting notes</a> on the official website.</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[3. Synchronising your notes]]></title>
+            <guid>06d1fa68cd944a1db1f44f8be9c3f1f2</guid>
+            <pubDate>Mon, 08 Apr 2024 12:22:53 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="synchronising-your-notes">Synchronising your notes</h1>
+<p>Joplin allows you to synchronise your data using various file hosting services. The supported cloud services are the following:</p>
+<h2 id="setting-up-joplin-cloud-synchronisation">Setting up Joplin Cloud synchronisation</h2>
+<p><a title="https://joplinapp.org/plans/" href="https://joplinapp.org/plans/">Joplin Cloud</a> is a web service specifically designed for Joplin. Besides synchronising your data, it also allows you to publish a note to the internet, or share a notebook with your friends, family or colleagues. Joplin Cloud, compared to other services, also features a number of performance improvements allowing for faster synchronisation.</p>
+<p>To use it, go to the config screen, then to the Synchronisation section. In the list of sync targets, select "Joplin Cloud". Enter your email and password, and you're ready to use Joplin Cloud.</p>
+<h2 id="setting-up-dropbox-synchronisation">Setting up Dropbox synchronisation</h2>
+<p>Select "Dropbox" as the synchronisation target in the config screen. Then, to initiate the synchronisation process, click on the "Synchronise" button in the sidebar and follow the instructions.</p>
+<h2 id="setting-up-nextcloud-synchronisation">Setting up Nextcloud synchronisation</h2>
+<p>Nextcloud is a self-hosted, private cloud solution. To set it up, go to the config screen and select Nextcloud as the synchronisation target. Then input the WebDAV URL (to get it, go to your Nextcloud page, click on Settings in the bottom left corner of the page and copy the URL). Note that it has to be the <strong>full URL</strong>, so for example if you want the notes to be under <code>/Joplin</code>, the URL would be something like <code>https://example.com/remote.php/webdav/Joplin</code> (note that "/Joplin" part). And <strong>make sure to create the "/Joplin" directory in Nextcloud</strong>. Finally set the username and password. If it does not work, please <a title="https://github.com/laurent22/joplin/issues/61#issuecomment-373282608" href="https://github.com/laurent22/joplin/issues/61#issuecomment-373282608">see this explanation</a> for more details.</p>
+<h2 id="setting-up-onedrive-or-webdav-synchronisation">Setting up OneDrive or WebDAV synchronisation</h2>
+<p>OneDrive and WebDAV are also supported as synchronisation services. Please see <a title="https://joplinapp.org/help/apps/sync/" href="https://joplinapp.org/help/apps/sync/">the synchronisation documentation</a> for more information.</p>
+<h2 id="using-end-to-end-encryption">Using End-To-End Encryption</h2>
+<p>Joplin supports end-to-end encryption (E2EE) on all the applications. E2EE is a system where only the owner of the data can read it. It prevents potential eavesdroppers - including telecom providers, internet providers, and even the developers of Joplin from being able to access the data. Please see the <a title="https://joplinapp.org/help/apps/sync/e2ee" href="https://joplinapp.org/help/apps/sync/e2ee">End-To-End Encryption Tutorial</a> for more information about this feature and how to enable it.</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[5. Joplin Privacy Policy]]></title>
+            <guid>28be43cbc4fc4abc921a0cb897acd2b6</guid>
+            <pubDate>Mon, 08 Apr 2024 12:22:53 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="joplin-privacy-policy">Joplin Privacy Policy</h1>
+<p>The Joplin applications, including the Android, iOS, Windows, macOS and Linux applications, do not send any data to any service without your authorisation. Any data that Joplin saves, such as notes or images, are saved to your own device and you are free to delete this data at any time.</p>
+<p>If you choose to synchronise with a third-party, such as OneDrive or Dropbox, the notes will be sent to that account, in which case the third-party privacy policy applies.</p>
+<p>In order to provide certain features, Joplin may need to connect to third-party services. You can disable most of these features in the application settings:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+<th>Default</th>
+<th>Can be disabled</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto-update</td>
+<td>Joplin periodically connects to GitHub to check for new releases.</td>
+<td>Enabled</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Geo-location</td>
+<td>Joplin saves geo-location information in note properties when you create a note.</td>
+<td>Enabled</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Synchronisation</td>
+<td>Joplin supports synchronisation of your notes across multiple devices. If you choose to synchronise with a third-party, such as OneDrive, the notes will be sent to your OneDrive account, in which case the third-party privacy policy applies.</td>
+<td>Disabled</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Wifi connection check</td>
+<td>On mobile, Joplin checks for Wifi connectivity to give the option to synchronise data only when Wifi is enabled.</td>
+<td>Enabled</td>
+<td>No <sup class="jop-noMdConv">(1)</sup></td>
+</tr>
+<tr>
+<td>Spellchecker dictionary</td>
+<td>On Linux and Windows, the desktop application downloads the spellchecker dictionary from <code>redirector.gvt1.com</code>.</td>
+<td>Enabled</td>
+<td>Yes <sup class="jop-noMdConv">(2)</sup></td>
+</tr>
+<tr>
+<td>Plugin repository</td>
+<td>The desktop application downloads the list of available plugins from the <a title="https://github.com/joplin/plugins" href="https://github.com/joplin/plugins">official GitHub repository</a>. If this repository is not accessible (eg. in China) the app will try to get the plugin list from <a title="https://github.com/laurent22/joplin/blob/8ac6017c02017b6efd59f5fcab7e0b07f8d44164/packages/lib/services/plugins/RepositoryApi.ts#L22" href="https://github.com/laurent22/joplin/blob/8ac6017c02017b6efd59f5fcab7e0b07f8d44164/packages/lib/services/plugins/RepositoryApi.ts#L22">various mirrors</a>, in which case the plugin screen <a title="https://github.com/laurent22/joplin/issues/5161#issuecomment-925226975" href="https://github.com/laurent22/joplin/issues/5161#issuecomment-925226975">works slightly differently</a>.</td>
+<td>Enabled</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Voice typing</td>
+<td>If you use the voice typing feature on Android, the application will download the language files from <a title="https://alphacephei.com/vosk/models" href="https://alphacephei.com/vosk/models">https://alphacephei.com/vosk/models</a></td>
+<td>Disabled</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><sup class="jop-noMdConv">(1) <a title="https://github.com/laurent22/joplin/issues/5705" href="https://github.com/laurent22/joplin/issues/5705">https://github.com/laurent22/joplin/issues/5705</a></sup><br class="jop-noMdConv" /><br />
+<sup class="jop-noMdConv">(2) If the spellchecker is disabled, <a title="https://discourse.joplinapp.org/t/new-version-of-joplin-contacting-google-servers-on-startup/23000/40?u=laurent" href="https://discourse.joplinapp.org/t/new-version-of-joplin-contacting-google-servers-on-startup/23000/40?u=laurent">it will not download the dictionary</a>.</sup></p>
+<p>For any question about Joplin privacy policy, please leave a message <a title="https://discourse.joplinapp.org/" href="https://discourse.joplinapp.org/">on the forum</a>.</p>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>

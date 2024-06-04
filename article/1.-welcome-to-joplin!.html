@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown-light.css" />
+<style>
+.main {
+  max-width: 800px;
+  margin: 50px auto 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    width: 85%;
+  }
+}
+
+.navigation {
+  margin-bottom: 50px;
+}
+.navigation a {
+  color: #222;
+  font-size: 28pt;
+  font-weight:600;
+  text-decoration: none;
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+
+#homepage,
+#homepage body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.homepage-main {
+  margin: 0 auto;
+  position: relative;
+  top: 30%;
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+
+.homepage-footer {
+  margin: 0;
+  position: relative;
+  top: 60%;
+  margin: 0 0 10px;
+}
+
+
+.homepage-footer {
+  font-size: 14px;
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-decoration:none;
+    opacity: 0.7;
+}
+
+.homepage-title-area {
+  transition: opacity 1s;
+  margin-bottom: 60px;
+}
+
+.homepage-title,
+.homepage-subtitle {
+  text-align: center;
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+.homepage-title {
+  font-size: 26px;
+  margin: 0 0 10px;
+  font-family:  Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+
+.homepage-subtitle {
+  font-size: 12px;
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+
+.homepage-navigation ul {
+  padding: 0;
+  text-align: center;
+}
+
+.homepage-navigation li {
+  list-style: none;
+  display: inline-block;
+  margin: 30px 0 0 30px;
+}
+.homepage-navigation li:first-child {
+  margin-left: 0;
+}
+
+.homepage-navigation a {
+  color: #dd4242;
+  text-decoration: none;
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+.homepage-navigation a:hover {
+  text-decoration: underline;
+}
+
+.about p {
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.about li {
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+  margin-top: 15px;
+}
+.about li a {
+  color: #000;
+  text-decoration: underline solid;
+}
+
+.about img {
+ width: 80%;
+}
+
+.article-title {
+  font-weight: normal;
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+
+.article-info {
+  color: #777777;
+  margin-bottom: 50px;
+  font-family:  Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+.article-info span {
+  margin: 0 30px 0px 0;
+}
+
+.article-info .keyword {
+  margin: 5px 5px 0 0;
+  display: inline-block;
+}
+
+@font-face {
+  font-family: octicons-link;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.woff")
+    format('woff');
+}
+
+.blogs-list-block {
+  line-height: 1.5em;
+}
+.blogs-list-block ol {
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 600px) {
+  .blogs-list-block ol {
+    padding-left: 1em;
+  }
+}
+.blogs-list-block li {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.annual-block {
+  margin-bottom: 0px;
+}
+
+.annual-block-headline {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 0px;
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+
+.annual-block-title {
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+.annual-block-title.is-dir {
+  text-decoration: dotted underline;
+}
+
+.annual-block-date {
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+  margin-right: 30px;
+  color: #999999;
+}
+
+.rss-link {
+  display: block;
+  width: 3em;
+  padding-left: 100%;
+  margin: 50px 0 100px -3em;
+  color: #000;
+}
+
+.error {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.error p {
+  font-size: 20px;
+}
+.error a {
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+  text-decoration: underline dotted;
+  color: #777777;
+}
+
+</style>
+
+    <title>
+      1. Welcome to Joplin! - Fosu Note
+    </title>
+</head>
+
+<body>
+  <div class="main">
+    <nav class="navigation">
+      <a href="/">
+        Fosu Note
+      </a>
+	</nav>
+	<article>
+      <header>
+        <h1 class="article-title">
+          1. Welcome to Joplin!
+        </h1>
+        <div class="article-info">
+          <div>
+            <span>Created At: <time datetime="1712578973520">
+                2024-04-08
+              </time></span>
+            <!--
+			<span>Updated At: <time datetime="1714895738180">
+                2024-05-05
+              </time></span>
+			-->
+          </div>
+          
+            <div>
+              Keywords: 
+                <span class="keyword">
+                  blog
+                </span>
+                
+            </div>
+            
+        </div>
+      </header>
+      <div class="article-content markdown-body"><h1 id="welcome-to-joplin">Welcome to Joplin!</h1>
+<p>Joplin is a free, open source note taking and to-do application, which helps you write and organise your notes, and synchronise them between your devices. The notes are searchable, can be copied, tagged and modified either from the application directly or from your own text editor. The notes are in <a title="https://joplinapp.org/help/apps/markdown" href="https://joplinapp.org/help/apps/markdown">Markdown format</a>. Joplin is available as a <strong>desktop</strong>, <strong>mobile</strong> and <strong>terminal</strong> application.</p>
+<p>The notes in this notebook give an overview of what Joplin can do and how to use it. In general, the three applications share roughly the same functionalities; any differences will be clearly indicated.</p>
+<p><img src="/_resources/1c789b027aaa4bed9334ac5f630e0756.png" /></p>
+<h2 id="joplin-is-divided-into-three-parts">Joplin is divided into three parts</h2>
+<p>Joplin has three main columns:</p>
+<ul>
+<li>
+<p><strong>Sidebar</strong> contains the list of your notebooks and tags, as well as the synchronisation status.</p>
+</li>
+<li>
+<p><strong>Note List</strong> contains the current list of notes - either the notes in the currently selected notebook, the notes in the currently selected tag, or search results.</p>
+</li>
+<li>
+<p><strong>Note Editor</strong> is the place where you write your notes. There is a <strong>Rich Text editor</strong> and a <strong>Markdown editor</strong> - click on the <strong>Toggle editor</strong> button in the top right hand corner to switch between both! You may also use an <a title="https://joplinapp.org/help/apps/external_text_editor" href="https://joplinapp.org/help/apps/external_text_editor">external editor</a> to edit notes. For example you can use Typora as an external editor and it will display the note as well as any embedded images.</p>
+</li>
+</ul>
+<h2 id="writing-notes-in-markdown">Writing notes in Markdown</h2>
+<p>Markdown is a lightweight markup language with plain text formatting syntax. Joplin supports a <a title="https://joplinapp.org/help/apps/markdown" href="https://joplinapp.org/help/apps/markdown">Github-flavoured Markdown syntax</a> with a few variations and additions.</p>
+<p>In general, while Markdown is a markup language, it is meant to be human readable, even without being rendered. This is a simple example (you can see how it looks in the viewer panel):</p>
+<hr />
+<h1 id="heading">Heading</h1>
+<h2 id="sub-heading">Sub-heading</h2>
+<p>Paragraphs are separated by a blank line. Text attributes <em>italic</em>, <strong>bold</strong> and <code>monospace</code> are supported. You can create bullet lists:</p>
+<ul>
+<li>apples</li>
+<li>oranges</li>
+<li>pears</li>
+</ul>
+<p>Or numbered lists:</p>
+<ol>
+<li>wash</li>
+<li>rinse</li>
+<li>repeat</li>
+</ol>
+<p>This is a <a title="https://joplinapp.org" href="https://joplinapp.org">link</a> and, finally, below is a horizontal rule:</p>
+<hr />
+<p>A lot more is possible including adding code samples, math formulae or checkbox lists - see the <a title="https://joplinapp.org/help/apps/markdown" href="https://joplinapp.org/help/apps/markdown">Markdown documentation</a> for more information.</p>
+<h2 id="organising-your-notes">Organising your notes</h2>
+<h3 id="with-notebooks">With notebooks</h3>
+<p>Joplin notes are organised into a tree of notebooks and sub-notebooks.</p>
+<ul>
+<li>On <strong>desktop</strong>, you can create a notebook by clicking on New Notebook, then you can drag and drop them into other notebooks to organise them as you wish.</li>
+<li>On <strong>mobile</strong>, press the "+" icon and select "New notebook".</li>
+<li>On <strong>terminal</strong>, press <code>:mn</code></li>
+</ul>
+<p><img src="/_resources/5ad8d7851b694d238d45e871d32cdac8.png" /></p>
+<h3 id="with-tags">With tags</h3>
+<p>The second way to organise your notes is using tags:</p>
+<ul>
+<li>On <strong>desktop</strong>, right-click on any note in the Note List, and select "Edit tags". You can then add the tags, separating them by commas.</li>
+<li>On <strong>mobile</strong>, open the note and press the "⋮" button and select "Tags".</li>
+<li>On <strong>terminal</strong>, type <code>:help tag</code> for the available commands.</li>
+</ul>
+</div>
+    </article>
+  </div>
+  <div class="main">
+        <script src="https://utteranc.es/client.js"
+        repo="h2dcc/note.github.io"
+        issue-term="url"
+        label="评论"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
+  
+  <div class="homepage-footer">
+     <p>©2024 by <a href="https://fosu.cc/about">HYRUO</a>, All rights reserved.</p>
+   </div>
+</body>
+
+</html>

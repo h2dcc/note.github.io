@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown-light.css" />
+<style>
+.main {
+  max-width: 800px;
+  margin: 50px auto 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    width: 85%;
+  }
+}
+
+.navigation {
+  margin-bottom: 50px;
+}
+.navigation a {
+  color: #222;
+  font-size: 28pt;
+  font-weight:600;
+  text-decoration: none;
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+
+#homepage,
+#homepage body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.homepage-main {
+  margin: 0 auto;
+  position: relative;
+  top: 30%;
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+
+.homepage-footer {
+  margin: 0;
+  position: relative;
+  top: 60%;
+  margin: 0 0 10px;
+}
+
+
+.homepage-footer {
+  font-size: 14px;
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-decoration:none;
+    opacity: 0.7;
+}
+
+.homepage-title-area {
+  transition: opacity 1s;
+  margin-bottom: 60px;
+}
+
+.homepage-title,
+.homepage-subtitle {
+  text-align: center;
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+.homepage-title {
+  font-size: 26px;
+  margin: 0 0 10px;
+  font-family:  Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+
+.homepage-subtitle {
+  font-size: 12px;
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+
+.homepage-navigation ul {
+  padding: 0;
+  text-align: center;
+}
+
+.homepage-navigation li {
+  list-style: none;
+  display: inline-block;
+  margin: 30px 0 0 30px;
+}
+.homepage-navigation li:first-child {
+  margin-left: 0;
+}
+
+.homepage-navigation a {
+  color: #dd4242;
+  text-decoration: none;
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+.homepage-navigation a:hover {
+  text-decoration: underline;
+}
+
+.about p {
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.about li {
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+  margin-top: 15px;
+}
+.about li a {
+  color: #000;
+  text-decoration: underline solid;
+}
+
+.about img {
+ width: 80%;
+}
+
+.article-title {
+  font-weight: normal;
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+
+.article-info {
+  color: #777777;
+  margin-bottom: 50px;
+  font-family:  Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+.article-info span {
+  margin: 0 30px 0px 0;
+}
+
+.article-info .keyword {
+  margin: 5px 5px 0 0;
+  display: inline-block;
+}
+
+@font-face {
+  font-family: octicons-link;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.woff")
+    format('woff');
+}
+
+.blogs-list-block {
+  line-height: 1.5em;
+}
+.blogs-list-block ol {
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 600px) {
+  .blogs-list-block ol {
+    padding-left: 1em;
+  }
+}
+.blogs-list-block li {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.annual-block {
+  margin-bottom: 0px;
+}
+
+.annual-block-headline {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 0px;
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+}
+
+.annual-block-title {
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+.annual-block-title.is-dir {
+  text-decoration: dotted underline;
+}
+
+.annual-block-date {
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+  margin-right: 30px;
+  color: #999999;
+}
+
+.rss-link {
+  display: block;
+  width: 3em;
+  padding-left: 100%;
+  margin: 50px 0 100px -3em;
+  color: #000;
+}
+
+.error {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.error p {
+  font-size: 20px;
+}
+.error a {
+  font-family: Noto Sans,LXGW WenKai GB,Noto Sans SC,pingfang sc,microsoft yahei,sans-serif;
+  text-decoration: underline dotted;
+  color: #777777;
+}
+
+</style>
+
+    <title>
+      3. Synchronising your notes - Fosu Note
+    </title>
+</head>
+
+<body>
+  <div class="main">
+    <nav class="navigation">
+      <a href="/">
+        Fosu Note
+      </a>
+	</nav>
+	<article>
+      <header>
+        <h1 class="article-title">
+          3. Synchronising your notes
+        </h1>
+        <div class="article-info">
+          <div>
+            <span>Created At: <time datetime="1712578973504">
+                2024-04-08
+              </time></span>
+            <!--
+			<span>Updated At: <time datetime="1712578973504">
+                2024-04-08
+              </time></span>
+			-->
+          </div>
+          
+            <div>
+              Keywords: 
+                <span class="keyword">
+                  blog
+                </span>
+                
+            </div>
+            
+        </div>
+      </header>
+      <div class="article-content markdown-body"><h1 id="synchronising-your-notes">Synchronising your notes</h1>
+<p>Joplin allows you to synchronise your data using various file hosting services. The supported cloud services are the following:</p>
+<h2 id="setting-up-joplin-cloud-synchronisation">Setting up Joplin Cloud synchronisation</h2>
+<p><a title="https://joplinapp.org/plans/" href="https://joplinapp.org/plans/">Joplin Cloud</a> is a web service specifically designed for Joplin. Besides synchronising your data, it also allows you to publish a note to the internet, or share a notebook with your friends, family or colleagues. Joplin Cloud, compared to other services, also features a number of performance improvements allowing for faster synchronisation.</p>
+<p>To use it, go to the config screen, then to the Synchronisation section. In the list of sync targets, select "Joplin Cloud". Enter your email and password, and you're ready to use Joplin Cloud.</p>
+<h2 id="setting-up-dropbox-synchronisation">Setting up Dropbox synchronisation</h2>
+<p>Select "Dropbox" as the synchronisation target in the config screen. Then, to initiate the synchronisation process, click on the "Synchronise" button in the sidebar and follow the instructions.</p>
+<h2 id="setting-up-nextcloud-synchronisation">Setting up Nextcloud synchronisation</h2>
+<p>Nextcloud is a self-hosted, private cloud solution. To set it up, go to the config screen and select Nextcloud as the synchronisation target. Then input the WebDAV URL (to get it, go to your Nextcloud page, click on Settings in the bottom left corner of the page and copy the URL). Note that it has to be the <strong>full URL</strong>, so for example if you want the notes to be under <code>/Joplin</code>, the URL would be something like <code>https://example.com/remote.php/webdav/Joplin</code> (note that "/Joplin" part). And <strong>make sure to create the "/Joplin" directory in Nextcloud</strong>. Finally set the username and password. If it does not work, please <a title="https://github.com/laurent22/joplin/issues/61#issuecomment-373282608" href="https://github.com/laurent22/joplin/issues/61#issuecomment-373282608">see this explanation</a> for more details.</p>
+<h2 id="setting-up-onedrive-or-webdav-synchronisation">Setting up OneDrive or WebDAV synchronisation</h2>
+<p>OneDrive and WebDAV are also supported as synchronisation services. Please see <a title="https://joplinapp.org/help/apps/sync/" href="https://joplinapp.org/help/apps/sync/">the synchronisation documentation</a> for more information.</p>
+<h2 id="using-end-to-end-encryption">Using End-To-End Encryption</h2>
+<p>Joplin supports end-to-end encryption (E2EE) on all the applications. E2EE is a system where only the owner of the data can read it. It prevents potential eavesdroppers - including telecom providers, internet providers, and even the developers of Joplin from being able to access the data. Please see the <a title="https://joplinapp.org/help/apps/sync/e2ee" href="https://joplinapp.org/help/apps/sync/e2ee">End-To-End Encryption Tutorial</a> for more information about this feature and how to enable it.</p>
+</div>
+    </article>
+  </div>
+  <div class="main">
+        <script src="https://utteranc.es/client.js"
+        repo="h2dcc/note.github.io"
+        issue-term="url"
+        label="评论"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
+  
+  <div class="homepage-footer">
+     <p>©2024 by <a href="https://fosu.cc/about">HYRUO</a>, All rights reserved.</p>
+   </div>
+</body>
+
+</html>
